@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="#0d0f1a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🔍 AI 搜题"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="截屏识题 · Claude AI 解答"
+        android:textSize="14sp"
+        android:textColor="#6b7090"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Claude API Key"
+        android:textColor="#9b9fc0"
+        android:textSize="13sp"
+        android:layout_marginBottom="6dp"/>
+
+    <EditText
+        android:id="@+id/et_api_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sk-ant-api03-..."
+        android:textColor="#ffffff"
+        android:textColorHint="#444466"
+        android:background="#1c1f33"
+        android:padding="14dp"
+        android:textSize="13sp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="保存 API Key"
+        android:backgroundTint="#2a2d45"
+        android:textColor="#6c63ff"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="▶ 启动悬浮球"
+        android:backgroundTint="#6c63ff"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="■ 停止"
+        android:backgroundTint="#1c1f33"
+        android:textColor="#e74c3c"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明：\n1. 填入 Claude API Key 并保存\n2. 点击「启动悬浮球」并授权截屏\n3. 悬浮球会出现在屏幕上\n4. 遇到题目时点击悬浮球截图\n5. AI 自动识别并弹出答案"
+        android:textColor="#6b7090"
+        android:textSize="13sp"
+        android:lineSpacingExtra="4dp"/>
+
+</LinearLayout>
